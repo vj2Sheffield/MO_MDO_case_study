@@ -2,7 +2,7 @@
 """
 Created on Wed Oct  4 10:08:38 2023
 
-@author: jamie
+@author: Victoria Johnson
 """
 import numpy as np
 from scipy.optimize import minimize as minimizeScipy
