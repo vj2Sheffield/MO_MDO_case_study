@@ -18,14 +18,14 @@ from pymoo.algorithms.moo.nsga2 import NSGA2
 
 save_results = True
 
-pops = np.array(pd.read_csv('Model_Data/populations.csv', header = None))[:, 1]
-xls = pd.ExcelFile('Model_Data/Static_Model_Parameters.xlsx')
+pops = np.array(pd.read_csv('Model_data/populations.csv', header = None))[:, 1]
+xls = pd.ExcelFile('Model_data/Static_Model_Parameters.xlsx')
 df2 = np.array(pd.read_excel(xls, 'Cluster2', index_col = 0))
 df3 = np.array(pd.read_excel(xls, 'Cluster3', index_col = 0))
 df4 = np.array(pd.read_excel(xls, 'Cluster4', index_col = 0))
 xticklabels = ['BOL', 'BUR', 'MAN', 'OLD', 'ROC', 'SAL', 'STO', 'TAM', 'TRA', 'WIG']
-beta = np.array(pd.read_csv('Model_Data/beta.csv', header = None))
-gamma = np.array(pd.read_csv('Model_Data/gamma.csv', header = None))
+beta = np.array(pd.read_csv('Model_data/beta.csv', header = None))
+gamma = np.array(pd.read_csv('Model_data/gamma.csv', header = None))
 
 
 residuals = df4[:, 0]
